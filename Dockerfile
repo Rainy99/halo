@@ -13,4 +13,4 @@ COPY ${JAR_FILE} halo.jar
 
 EXPOSE ${PORT}
 
-ENTRYPOINT java -Xshareclasses -Xquickstart -Djava.security.egd=file:/dev/./urandom -server -jar halo.jar
+ENTRYPOINT -Djava.security.egd=file:/dev/./urandom -server -jar halo.jar
